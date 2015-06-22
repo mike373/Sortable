@@ -147,9 +147,10 @@ def Print_Results(Results, results_file):
         results_file.write(line)
 
 if __name__=='__main__':
-    products_file = open("products.txt" , 'r', encoding="utf8")
-    listings_file = open("listings.txt" , 'r', encoding="utf8")
-    results_file = open("results.txt", 'w', encoding="utf8")
+    
+    products_file = open(sys.argv[1] , 'r', encoding="utf8")
+    listings_file = open(sys.argv[2] , 'r', encoding="utf8")
+    results_file = open(sys.argv[3], 'w', encoding="utf8")
     
     Products = Read_Products_File(products_file)
     Listings = Read_Listings_File(listings_file)
