@@ -6,8 +6,7 @@
        as this file, sortable_test.py.  Results will be printed to file in the 
        same directory in  results.txt
 '''
-
-
+import sys
 class Product:
     # Basic class for the Product object
     def __init__(self, product_name, manufacturer, family, model, announced_date):
